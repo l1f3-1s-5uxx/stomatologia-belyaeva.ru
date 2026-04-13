@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Лицензия №ЛО-54-01-002490 от 24 января 2014г.</title>
+    <link rel="stylesheet" href="../styles/general.css">
+
+    <style>
+        .license-pdf>iframe {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            width: 1200px;
+            height: 1000px;
+        }
+
+        .license-for-phones {
+            display: none;
+        }
+
+        .license-for-phones {
+            margin-top: 250px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .download-license {
+            background-color: black;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 1000px) {
+            .license-pdf {
+                display: none;
+            }
+
+            .license-for-phones {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-top-info wrapper1100">
+                <div class="header-top-element">
+                    <img src="../assets/icons/phone-icon.svg" alt="Телефон" draggable="false">
+                    <p>+7 (383) 452-47-64</p>
+                </div>
+
+                <div class="header-top-element">
+                    <img src="../assets/icons/email-icon.svg" alt="Почта" draggable="false">
+                    <p>belyaewww@rambler.ru</p>
+                </div>
+                <div class="header-top-element">
+                    <img src="../assets/icons/map-icon.svg" alt="Карта" draggable="false">
+                    <p>Черепаново, ​Интернациональная улица, 10​</p>
+                </div>
+            </div>
+
+
+            <nav class="back-green">
+                <div class="nav-container wrapper1100">
+                    <a class="logo-button" href="../index.html"><img src="../assets/icons/logo.svg" alt="Логотип"
+                            draggable="false"></a>
+                    <div class="nav-buttons">
+                        <ul>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Услуги и цены</button>
+                                    <div class="dropdown-content">
+                                        <a href="../pages/therapy.html">Терапия</a>
+                                        <a href="../pages/orthopedics.html">Ортопедия</a>
+                                        <a href="../pages/periodontology.html">Пародонтология</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="../index.html#contacts">Контакты</a></li>
+                            <li><a href="../index.html#reviews">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-phone-container">
+                        <div class="burger" id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="menu" id="menu">
+                            <a href="../pages/therapy.html">Терапия</a>
+                            <a href="../pages/orthopedics.html">Ортопедия</a>
+                            <a href="../pages/periodontology.html">Пародонтология</a>
+                            <a href="../index.html#contacts">Контакты</a>
+                            <a href="../index.html#reviews">Отзывы</a>
+                        </div>
+
+                        <script>
+                            const burger = document.getElementById('burger');
+                            const menu = document.getElementById('menu');
+                            const menuLinks = menu.querySelectorAll('a');
+
+                            burger.addEventListener('click', (e) => {
+                                burger.classList.toggle('active');
+                                menu.classList.toggle('active');
+                                e.stopPropagation();
+                            });
+
+                            document.addEventListener('click', (e) => {
+                                if (menu.classList.contains('active') && !menu.contains(e.target)) {
+                                    menu.classList.remove('active');
+                                    burger.classList.remove('active');
+                                }
+                            });
+
+                            menuLinks.forEach(link => {
+                                link.addEventListener('click', () => {
+                                    menu.classList.remove('active');
+                                    burger.classList.remove('active');
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="license-for-phones">
+            <p>Лицензия №ЛО-54-01-002490 от 24 января 2014г.</p>
+            <a href="../assets/license.pdf" class="download-license">Открыть PDF</a>
+        </div>
+        <div class="license-pdf">
+            <iframe src="../assets/license.pdf"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

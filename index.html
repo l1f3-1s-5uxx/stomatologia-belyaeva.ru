@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоматология Беляева, г. Черепаново</title>
+    <link rel="preload" href="assets/fonts/TildaSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/adaptation.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <meta name="format-detection" content="telephone=no">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-top-info wrapper1100">
+                <div class="header-top-element">
+                    <img src="assets/icons/phone-icon.svg" alt="Телефон" draggable="false">
+                    <p>+7 (383) 452-47-64</p>
+                </div>
+
+                <div class="header-top-element">
+                    <img src="assets/icons/email-icon.svg" alt="Почта" draggable="false">
+                    <p>belyaewww@rambler.ru</p>
+                </div>
+                <div class="header-top-element">
+                    <img src="assets/icons/map-icon.svg" alt="Карта" draggable="false">
+                    <p>Черепаново, ​Интернациональная улица, 10​</p>
+                </div>
+            </div>
+
+
+            <nav class="back-green">
+                <div class="nav-container wrapper1100">
+                    <a class="logo-button" href="../index.html"><img src="../assets/icons/logo.svg" alt="Логотип" draggable="false"></a>
+                    <div class="nav-buttons">
+                        <ul>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Услуги и цены</button>
+                                    <div class="dropdown-content">
+                                        <a href="pages/therapy.html">Терапия</a>
+                                        <a href="pages/orthopedics.html">Ортопедия</a>
+                                        <a href="pages/periodontology.html">Пародонтология</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#contacts">Контакты</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-phone-container">
+                        <div class="burger" id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="menu" id="menu">
+                            <a href="pages/therapy.html">Терапия</a>
+                            <a href="pages/orthopedics.html">Ортопедия</a>
+                            <a href="pages/periodontology.html">Пародонтология</a>
+                            <a href="#contacts">Контакты</a>
+                            <a href="#reviews">Отзывы</a>
+                        </div>
+
+                        <script>
+                            const burger = document.getElementById('burger');
+                            const menu = document.getElementById('menu');
+                            const menuLinks = menu.querySelectorAll('a');
+
+                            burger.addEventListener('click', (e) => {
+                                burger.classList.toggle('active');
+                                menu.classList.toggle('active');
+                                e.stopPropagation();
+                            });
+
+                            document.addEventListener('click', (e) => {
+                                if (menu.classList.contains('active') && !menu.contains(e.target)) {
+                                    menu.classList.remove('active');
+                                    burger.classList.remove('active');
+                                }
+                            });
+
+                            menuLinks.forEach(link => {
+                                link.addEventListener('click', () => {
+                                    menu.classList.remove('active');
+                                    burger.classList.remove('active');
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="welcome wrapper1100">
+                <div class="welcome-container">
+                    <div class="welcome-text">
+                        <h1>OOO “СТОМАТОЛОГИЯ<br>БЕЛЯЕВА”</h1>
+                        <P>Качество, проверенное годами</P>
+                    </div>
+                    <div class="welcome-button-container">
+                        <a href="tel:+7 (383) 452-47-64" class="welcome-button back-gray">Записаться на прием</a>
+                    </div>
+                </div>
+                
+                <img class="welcome-img-background" src="assets/img/back-welcome.png" alt="Картинка" draggable="false">
+                <img class="welcome-img-phone" src="assets/img/welcome-image-phone.png" alt="Картинка" draggable="false">
+            </section>
+            <section id="about-clinic">
+                <div class="about-title back-green white">
+                    <h2>ООО “Стоматология Беляева” — современная стоматология,<br>
+                        где вы получаете качественное лечение без лишних затрат и сложностей.</h2>
+                </div>
+
+                <div class="about-clinic-container">
+
+                    <div class="about-clinic-mainphoto-container wrapper1100 white">
+
+                        <p class="about-clinic-main-photo-text">
+                            Мы работаем много лет и знаем, что важно пациенту:<br>
+                            понятно, надёжно и с хорошим результатом.
+                        </p>
+
+
+                        <div class="about-clinic-lists-container">
+
+                            <div class="about-clinic-list">
+
+                                <p>Почему к нам обращаются</p>
+                                <ul>
+                                    <li>современное оборудование</li>
+                                    <li>качественные материалы</li>
+                                    <li>опытные специалисты</li>
+                                    <li>честный подход к лечению</li>
+                                    <li>адекватные цены</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="about-clinic-list">
+
+                                <p>Как проходит лечение</p>
+                                <ol>
+                                    <li>Осмотр и точная диагностика</li>
+                                    <li>Понятное объяснение ситуации</li>
+                                    <li>Предложение оптимального<br>
+                                        варианта лечения</li>
+                                    <li>Качественная работа</li>
+                                </ol>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="about-clinic-secondphoto-container wrapper1100">
+
+                        <div class="about-clinic-secondphoto-maintext">
+                            <p class="about-clinic-maintext">Вы сразу понимаете, что происходит,<br>
+                                сколько это стоит и какой будет результат.</p>
+                            <p class="about-clinic-secondphoto-secondtext green">Без навязывания лишних услуг — только
+                                то, что действительно нужно.</p>
+                        </div>
+
+                        <aside class="secondphoto-container">
+
+                            <img src="assets/img/clinic-photo2.png" alt="Фото клиники изнутри 1">
+
+
+                            <div class="secondphoto-column">
+
+                                <img src="assets/img/clinic-photo3.png" alt="Фото клиники изнутри 2">
+                                <img src="assets/img/clinic-photo4.png" alt="Фото клиники изнутри 3">
+
+                            </div>
+
+                        </aside>
+                    </div>
+
+                    <div class="about-clinic-end">
+                        <p>Не откладывайте лечение — чем раньше вы обратитесь, тем проще и дешевле решить проблему. <br>
+                            <span class="green">ООО «Стоматология Беляева» — современное лечение с понятным
+                                результатом.</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="servises-container">
+
+                <div class="servise servise-image1">
+                    <p class="servise-title">Терапия</p>
+
+                    <div class="center">
+                        <ul class="servise-info servise-info1">
+                            <li>Лечение</li>
+                            <li>Эстетика</li>
+                        </ul>
+
+                        <a href="pages/orthopedics.html" class="servise-link back-gray">подробнее</a>
+                    </div>
+                </div>
+
+                <div class="servise servise-image2">
+                    <p class="servise-title">Ортопедия</p>
+
+                    <div class="center">
+                        <ul class="servise-info servise-info2">
+                            <li>Несъемное протезирование</li>
+                            <li>Съемное протезирование</li>
+                        </ul>
+
+                        <a href="pages/orthopedics.html" class="servise-link back-gray">подробнее</a>
+                    </div>
+                </div>
+
+                <div class="servise servise-image3">
+                    <p class="servise-title">Пародонтология</p>
+
+                    <div class="center">
+                        <ul class="servise-info servise-info3">
+                            <li>Профилактика</li>
+                            <li>Лечение</li>
+                        </ul>
+
+                        <a href="pages/orthopedics.html" class="servise-link back-gray">подробнее</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts">
+
+                <h2 class="contact-title">МЫ НАХОДИМСЯ</h2>
+
+                <div class="contacts-container">
+                    <div class="contact-column">
+                        <p>г. Черепаново, ул. Интернациональная, 10<br>
+                            <span class="green">belyaewww@rambler.ru</span>
+                        </p>
+
+                        <p class="contact-second-element">+7 (38345) 2‒47‒64</p>
+                    </div>
+
+                    <div class="contact-column contact-text-center">
+                        <p class="green">Дополнительные контакты</p>
+                        <p>+7 (923) 237‒24‒31</p>
+                        <p>+7 (963) 947‒35‒84</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="reviews">
+                <div class="reviews-container wrapper1100">
+                    <div style="width:450px;height:600px;overflow:hidden;position:relative;">
+                        <iframe
+                            style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+                            src="https://yandex.ru/maps-reviews-widget/1812562542?comments">
+                        </iframe>
+                        <a href="https://yandex.ru/maps/org/stomatologiya_belyayeva/1812562542/" target="_blank"
+                            style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">
+                            Стоматология Беляева на карте Черепаново — Яндекс Карты
+                        </a>
+                    </div>
+
+                    <iframe id="big_light_70000001022637155" frameborder="0" width="450px" height="600px"
+                        sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+                    <script type="text/javascript">
+                        ((r, u) => { const l = document.getElementById(r); l.contentWindow.document.open(), l.contentWindow.document.write(decodeURIComponent(escape(atob(u)))), l.contentWindow.document.close() })("big_light_70000001022637155", "PGhlYWQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogICAgd2luZG93Ll9fc2l6ZV9fPSdiaWcnOwogICAgd2luZG93Ll9fdGhlbWVfXz0nbGlnaHQnOwogICAgd2luZG93Ll9fYnJhbmNoSWRfXz0nNzAwMDAwMDEwMjI2MzcxNTUnCiAgICB3aW5kb3cuX19vcmdJZF9fPSc3MDAwMDAwMTAyMjYzNzE1NCcKICAgPC9zY3JpcHQ+PHNjcmlwdCBjcm9zc29yaWdpbj0iYW5vbnltb3VzIiB0eXBlPSJtb2R1bGUiIHNyYz0iaHR0cHM6Ly9kaXNrLjJnaXMuY29tL3dpZGdldC1jb25zdHJ1Y3Rvci9hc3NldHMvaWZyYW1lLmpzIj48L3NjcmlwdD48bGluayByZWw9Im1vZHVsZXByZWxvYWQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmpzIj48bGluayByZWw9InN0eWxlc2hlZXQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmNzcyI+PC9oZWFkPjxib2R5PjxkaXYgaWQ9ImlmcmFtZSI+PC9kaXY+PC9ib2R5Pg==")
+                    </script>
+                </div>
+            </section>
+        </main>
+        <div class="wrapper-to-footer"></div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img class="footer-logo" src="assets/icons/logo.svg" alt="Логотип">
+                <a href="pages/license.html" class="license-link">Просмотр лицензии</a>
+            </div>
+
+            <div class="footer-column white org-info">
+                <p class="org-name">ООО “Стоматология”</p>
+
+                <p>ОГРН 1025405424516<br>
+                    ИНН 5440100478</p>
+
+                <p>Лицензия №ЛО-54-01-002490 от 24 января 2014г.</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

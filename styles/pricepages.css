@@ -1,0 +1,89 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+
+
+/* --------------------- CONTAINERS --------------------- */
+
+.first-container,
+.second-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-content-container,
+.second-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.periodontology {
+    justify-content: center;
+}
+
+.orthopedics {
+    margin-top: 3.03vh;
+}
+
+/* --------------------- CONTENT --------------------- */
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 590px;
+    width: 100vw;
+    background-color: rgba(255, 226, 218, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px outset rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+}
+
+.content:not(.price-in) {
+    gap: 2.03vh;
+}
+
+.content-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5vh;
+    padding: 0 20px;
+    font-size: clamp(20px, 5vw, 20px);
+}
+
+.content-text {
+    padding: 20px;
+    font-size: clamp(16px, 2.5vw, 16px);
+    margin-bottom: 0.5vh;
+}
+
+
+/* used for multiple prices in the card */
+.content-price-in {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5vh;
+    padding: 0 20px;
+    font-size: clamp(16px, 5vw, 20px);
+}
+
+.price-in-small {
+    font-size: clamp(10px, 1.25vw, 16px);
+}
+
+/* --------------------- IMAGES --------------------- */
+img {
+    max-width: 590px;
+}
+
+
+
+/* --------------------- adaptive --------------------- */
+@media (max-width: 587px) {
+    .content-image {
+        display: none;
+    }
+}

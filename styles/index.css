@@ -1,0 +1,277 @@
+/* --------------------- WELCOME BLOCK --------------------- */
+main {
+    margin-top: 5vh;
+}
+
+
+.welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.welcome-img-background {
+    position: relative;
+    z-index: -1;
+}
+
+.welcome-img-phone {
+    display: none;
+}
+
+/* text content - container */
+.welcome-container {
+    left: 1.45vw;
+    position: absolute;
+}
+
+/* text content */
+h1 {
+    font-size: clamp(24px, 5vw, 64px);
+}
+
+.welcome-text p {
+    margin: 0;
+    font-size: clamp(16px, 2.5vw, 36px);
+}
+
+/* sign up - button */
+.welcome-button-container {
+    margin-top: 5vh;
+    margin-left: 20vw;
+}
+
+.welcome-button-container a {
+    font-size: 2.22vh;
+    border-radius: 100px;
+    padding: 15px 20px;
+}
+
+.welcome-button:hover {
+    background: none;
+    border: 1px solid #414141;
+    color: #414141;
+}
+
+
+
+/* --------------------- ABOUT THE CLINIC BLOCK --------------------- */
+
+/* green box title */
+.about-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    font-size: clamp(10px, 2vw, 20px);
+    text-align: center;
+}
+
+
+/* main photo clinic block */
+.about-clinic-mainphoto-container {
+    margin-top: 11.38vh;
+    width: min(100%, 1116px);
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../assets/img/clinic-photo1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px;
+    border-radius: 25px;
+    font-size: clamp(20px, 2vw, 24px);
+}
+
+.about-clinic-main-photo-text {
+    padding: 0.52vw;
+}
+
+.about-clinic-lists-container {
+    height: 392px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.12vw;
+}
+
+.about-clinic-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(248, 239, 237, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+    width: min(100%, 400px);
+}
+
+
+/* second block */
+
+.about-clinic-secondphoto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 5.77vh;
+}
+
+.about-clinic-secondphoto-container img {
+    max-width: 197px;
+}
+
+.about-clinic-maintext {
+    font-size: clamp(20px, 5vw, 31px);
+}
+
+.about-clinic-secondphoto-secondtext {
+    font-size: 16px;
+}
+
+.secondphoto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.30vw;
+}
+
+.secondphoto-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2.31vh;
+}
+
+
+/* about clinic end block */
+
+.about-clinic-end {
+    font-size: clamp(20px, 5vw, 24px);
+    margin-top: 5.70vh;
+    text-align: center;
+}
+
+
+
+/* --------------------- SERVISES BLOCK --------------------- */
+.servises-container {
+    margin-top: 18.71vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.servise {
+    display: flex;
+    flex-direction: column;
+
+    width: 322px;
+    height: 200px;
+}
+
+.servise-title {
+    font-size: clamp(24px, 2vw, 32px);
+
+    margin: 10px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.servise-info {
+    font-size: clamp(16px, 1vw, 20px);
+
+    background-color: rgba(217, 217, 217, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    border: 1px outset white;
+}
+
+.servise-info1 {
+    padding: 5px 90px;
+}
+
+.servise-info2 {
+    padding: 5px 25px;
+}
+
+.servise-info3 {
+    padding: 5px 75px;
+}
+
+
+.servise-link {
+    text-align: center;
+    font-size: 20px;
+
+    padding: 5px 30px;
+    border-radius: 100px;
+}
+
+.servise-link:hover {
+    background: none;
+    border: 1px solid #414141;
+    color: #414141;
+}
+
+/* background cards */
+.servise-image1 {
+    background-image: url(../assets/img/servise-image1.png);
+    background-size: 322.58px;
+}
+
+.servise-image2 {
+    background-image: url(../assets/img/servise-image2.png);
+    background-size: 322.58px;
+}
+
+.servise-image3 {
+    background-image: url(../assets/img/servise-image3.png);
+    background-size: 322.58px;
+}
+
+
+
+/* --------------------- CONTACTS BLOCK --------------------- */
+
+#contacts {
+    margin-top: 20vh;
+}
+
+.contact-title {
+    font-size: clamp(24px, 5vw, 32px);
+    text-align: center;
+}
+
+.contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15.62vw;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contact-text-center {
+    text-align: center;
+}
+
+
+
+/* --------------------- REVIEWS --------------------- */
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 18.71vh;
+}

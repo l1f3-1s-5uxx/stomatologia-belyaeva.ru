@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Стоматология Беляева, Ортопедия</title>
+    <link rel="preload" href="../assets/fonts/TildaSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/pricepages.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-top-info wrapper1100">
+                <div class="header-top-element">
+                    <img src="../assets/icons/phone-icon.svg" alt="Телефон" draggable="false">
+                    <p>+7 (383) 452-47-64</p>
+                </div>
+
+                <div class="header-top-element">
+                    <img src="../assets/icons/email-icon.svg" alt="Почта" draggable="false">
+                    <p>belyaewww@rambler.ru</p>
+                </div>
+                <div class="header-top-element">
+                    <img src="../assets/icons/map-icon.svg" alt="Карта" draggable="false">
+                    <p>Черепаново, ​Интернациональная улица, 10​</p>
+                </div>
+            </div>
+
+
+            <nav class="back-green">
+                <div class="nav-container wrapper1100">
+                    <a class="logo-button" href="../index.html"><img src="../assets/icons/logo.svg" alt="Логотип"
+                            draggable="false"></a>
+                    <div class="nav-buttons">
+                        <ul>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Услуги и цены</button>
+                                    <div class="dropdown-content">
+                                        <a href="../pages/therapy.html">Терапия</a>
+                                        <a href="../pages/orthopedics.html">Ортопедия</a>
+                                        <a href="../pages/periodontology.html">Пародонтология</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="../index.html#contacts">Контакты</a></li>
+                            <li><a href="../index.html#reviews">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-phone-container">
+                        <div class="burger" id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="menu" id="menu">
+                            <a href="../pages/therapy.html">Терапия</a>
+                            <a href="../pages/orthopedics.html">Ортопедия</a>
+                            <a href="../pages/periodontology.html">Пародонтология</a>
+                            <a href=../index.html#contacts>Контакты</a>
+                            <a href="../index.html#reviews">Отзывы</a>
+                        </div>
+
+                        <script>
+                            const burger = document.getElementById('burger');
+                            const menu = document.getElementById('menu');
+                            const menuLinks = menu.querySelectorAll('a');
+
+                            burger.addEventListener('click', (e) => {
+                                burger.classList.toggle('active');
+                                menu.classList.toggle('active');
+                                e.stopPropagation();
+                            });
+
+                            document.addEventListener('click', (e) => {
+                                if (menu.classList.contains('active') && !menu.contains(e.target)) {
+                                    menu.classList.remove('active');
+                                    burger.classList.remove('active');
+                                }
+                            });
+
+                            menuLinks.forEach(link => {
+                                link.addEventListener('click', () => {
+                                    menu.classList.remove('active');
+                                    burger.classList.remove('active');
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h2 class="first-title green" style="text-align: center;">Протезирование</h2>
+
+        <main>
+            <section class="first-container">
+
+                <div class="first-content-container">
+
+                    <div class="content">
+
+                        <div class="content-title">
+                            <p>Консультация стоматолога-ортопеда</p>
+                            <p class="green">200p</p>
+                        </div>
+
+
+                        <div class="content-text gray">
+                            <p>
+                                Включает осмотр зубов и прикуса, выявление дефектов зубного ряда.<br>
+                                Подбор оптимального варианта восстановления — коронки, мосты и др.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="content">
+
+                        <div class="content-title">
+                            <p>Несъемное протезирование</p>
+                            <p class="green">3800 - 20000р</p>
+                        </div>
+
+
+                        <div class="content-text gray">
+                            <p>
+                                Стоимость за 1 зуб, зависит от вида ортопедической конструкции<br>
+                                и выбранного материала (металл/металлокерамика/цирконий).
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="content">
+
+                        <div class="content-title">
+                            <p>Съемное протезирование</p>
+                            <p class="green">15000 - 30000p</p>
+                        </div>
+
+
+                        <div class="content-text gray">
+                            <p>
+                                Стоимость за одну челюсть
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="content">
+
+                        <div class="content-title">
+                            <p>Починка протеза</p>
+                            <p class="green">1000 - 2000р</p>
+                        </div>
+
+
+                        <div class="content-text gray">
+                            <p>
+                                Перелом базиса, приварка кламмера, приварка зуба.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="content price-in">
+
+                        <div class="content-title">
+                            <p>Временное решение</p>
+                        </div>
+
+
+                        <div class="content-price-in gray">
+                            <p>
+                                Временная коронка (PMMA monocolor)<br>
+                                Иммедиат протез
+                            </p>
+                            <p class="green">
+                                3000p<br>
+                                5000p
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="second-container orthopedics">
+
+                <div class="second-content-container">
+
+                    <div class="content">
+
+                        <div class="content-title">
+                            <p>Снятие коронки</p>
+                            <p class="green">300 - 1000р</p>
+                        </div>
+
+
+                        <div class="content-text gray">
+                            <p>
+                                Стоимость зависит от материала коронки. (Штампованная, пластмассовая,<br>
+                                цельнолитая, металлокерамическая, безметалловая.)
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <img class="content-image" src="../assets/img/image2.png" alt="Протез, фото">
+                </div>
+            </section>
+        </main>
+        <div class="wrapper-to-footer"></div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img class="footer-logo" src="../assets/icons/logo.svg" alt="Логотип">
+                <a href="license.html" class="license-link">Просмотр лицензии</a>
+            </div>
+
+            <div class="footer-column white">
+                <p class="org-name">ООО “Стоматология”</p>
+
+                <p>ОГРН 1025405424516<br>
+                    ИНН 5440100478</p>
+
+                <p>Лицензия №ЛО-54-01-002490 от 24 января 2014г.</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

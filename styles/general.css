@@ -1,0 +1,338 @@
+/* --------------------- HEADER INFO + NAVIGATION --------------------- */
+
+.header-top-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.11vh 0;
+}
+
+.header-top-element {
+    display: flex;
+    align-items: center;
+    gap: 0.46vw;
+
+    font-size: 1.85vh;
+}
+
+.header-top-element img {
+    max-width: 20px;
+}
+
+
+/* NAVIGATION */
+
+.nav-phone-container {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-button {
+    margin-top: 5px;
+}
+
+.nav-buttons ul {
+    list-style: none;
+    font-size: clamp(20px, 5vw, 24px);
+
+    display: flex;
+    gap: 4.79vw;
+}
+
+.nav-buttons a:not(.dropdown-content a):hover {
+    color: #d8d8d8;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* prices button */
+.dropbtn {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(20px, 5vw, 24px);
+    font-family: Tilda;
+    padding: 0;
+}
+
+/* drop menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* show drop content */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* NAVIGATION FOR PHONES */
+
+.burger {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.burger span {
+    height: 4px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu {
+    position: fixed;
+    left: -100%;
+    width: 95%;
+    background: rgb(41, 41, 41);
+    background: linear-gradient(to right, rgb(41, 41, 41), rgb(50, 50, 50), rgb(255, 255, 255, 0));
+    backdrop-filter: blur(2px);
+    border-radius: 0px 35px;
+    transition: 0.3s;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 25px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.menu.active {
+    left: 0;
+    z-index: 1000;
+}
+
+.burger.active span:nth-child(1) {
+    opacity: 0
+}
+
+.burger.active span:nth-child(3) {
+    opacity: 0
+}
+
+
+@media (max-width: 602px) {
+    .nav-buttons {
+        display: none;
+    }
+
+    .nav-phone-container {
+        display: block;
+    }
+
+    .logo-button {
+        margin-left: 20px;
+    }
+}
+
+/* --------------------- FONTS + COLORS --------------------- */
+
+@font-face {
+    font-family: Tilda;
+    src: url(../assets/fonts/TildaSans-Regular.ttf);
+}
+
+
+.white {
+    color: #ffffff;
+}
+
+.green {
+    color: #269F64;
+}
+
+.gray {
+    color: #464646;
+}
+
+.light-gray {
+    color: #797979;
+}
+
+
+
+/* --------------------- BACKGROUND COLORS --------------------- */
+
+.back-price-elements {
+    color: rgba(255, 226, 218, 0.200);
+    backdrop-filter: blur(20px);
+    border: 1px outset rgba(255, 255, 255, 0.250);
+}
+
+.back-green {
+    background-color: #269F64;
+}
+
+.back-gray {
+    background-color: #464646;
+}
+
+
+
+/* --------------------- DEFAULT SETTINGS --------------------- */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Tilda;
+    color: #000000;
+
+    background-image: url(../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@media (max-width: 1200px) {
+
+    body,
+    html {
+        background: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p {
+    margin: 0;
+}
+
+/* smooth transitions between pages */
+@view-transition {
+    navigation: auto;
+}
+
+
+/* --------------------- wrappers --------------------- */
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background-color: rgba(250, 250, 250, 0.200);
+    backdrop-filter: blur(20px);
+    border: 1px outset rgba(255, 255, 255, 0.250);
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        border: none;
+    }
+}
+
+.wrapper-to-footer {
+    margin-top: 200px;
+}
+
+.wrapper1100 {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+/* --------------------- FOOTER --------------------- */
+
+footer {
+    background-color: #282828;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: end;
+    font-size: clamp(10px, 2vw, 16px);
+}
+
+.footer-column {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.org-name {
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+
+.license-link {
+    width: fit-content;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 5px 25px;
+}
+
+.license-link:hover {
+    border: none;
+    background-color: #ffffff;
+    color: #282828;
+    padding: 5.5px 25.5px;
+}
+
+@media (max-width: 900px) {
+    .license-link:hover {
+        border: 1px solid #ffffff;
+        background: none;
+        color: #ffffff;
+        padding: 5px 25px;
+    }
+}
+
+@media (max-width: 403px) {
+    .footer-container {
+        text-align: start;
+        gap: 20px;
+    }
+
+}

@@ -1,0 +1,115 @@
+/* --------------------- index.html --------------------- */
+@media (max-width: 1082px) {
+    .about-clinic-secondphoto-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.77vh;
+    }
+}
+
+@media (max-width: 966px) {
+    .servises-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5.77vh;
+    }
+}
+
+@media (max-width: 825px) {
+    .about-clinic-secondphoto-maintext {
+        margin-top: 4vh;
+    }
+
+    .welcome-button:hover {
+        background: #464646 !important;
+        border: none !important;
+        color: #ffffff !important;
+    }
+
+    .servise-link:hover {
+        background: #464646 !important;
+        border: none !important;
+        color: #ffffff !important;
+    }
+}
+
+@media (max-width: 507px) {
+    .secondphoto-container {
+        gap: 2.31vh !important;
+        justify-content: center;
+    }
+
+    .secondphoto-column {
+        gap: 2.31vh !important;
+    }
+
+    .contact-column {
+        text-align: center;
+    }
+}
+
+@media (max-width: 644px) {
+    .servises-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5.77vh;
+    }
+}
+
+@media (max-width: 476px) {
+    .about-clinic-main-photo-text {
+        display: none;
+    }
+
+    .about-clinic-mainphoto-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .welcome-img-background {
+        display: none;
+    }
+
+    .welcome-text {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(2px);
+        border-radius: 25px;
+        border: 1px outset white;
+        padding: 5px 150px;
+        margin-top: 230px;
+
+        white-space: nowrap;
+    }
+
+    .welcome-img-phone {
+        display: flex !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        max-width: 500px;
+    }
+
+    .about-title {
+        margin-top: 13vh !important;
+    }
+
+    .welcome-button-container {
+        margin-top: 100px !important;
+        margin-left: 0;
+        white-space: nowrap;
+    }
+
+    .welcome-container {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+
+    .welcome-button-container a {
+        padding: 15px 25px !important;
+        margin-left: 25%;
+    }
+}
